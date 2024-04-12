@@ -1,0 +1,162 @@
+.header {
+    height: 70px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(229,229,229);
+    z-index: 100;
+}
+
+.left-tools {
+    display: flex;
+    align-items: center;
+}
+
+.Hamburger-menu {
+    height: 26px;
+    margin-left: 24px;
+    margin-right: 20px;
+}
+
+.Youtube-logo {
+    height: 22px;
+}
+
+.middle-tools {
+    margin: 0px 20px;
+    max-width: 700px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.searchbox {
+    flex: 1;
+    height: 45px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 22.5px 0 0 22.5px;
+    border-color: rgba(204, 204, 204, 1);
+    box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 1);
+    padding-left: 12px;
+    font-size: 16px;
+    font-family: Roboto;
+    width: 0;
+}
+
+.searchbox::placeholder {
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.search-button {
+    height: 45px;
+    width: 58px;
+    border-right: 1px;
+    border-style: solid;
+    border-color: rgba(204, 204, 204, 1);
+    margin-left: -1px;
+    border-radius: 0px 20px 20px 0px;
+    color: rgb(248,248,248);
+}
+
+.search-button,
+.audio-button,
+.create-container,
+.notification-icon-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    cursor: pointer;
+}
+
+.search-button .toolbar,
+.audio-button .toolbar,
+.create-container .toolbar,
+.notification-icon-container .toolbar {
+    position: absolute;
+    background-color: rgb(160, 160, 160);
+    color: white;
+    bottom: -40px;
+    padding: 4px 6px;
+    font-family: Roboto;
+    font-size: 14px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover .toolbar,
+.audio-button:hover .toolbar,
+.create-container:hover .toolbar,
+.notification-icon-container:hover .toolbar {
+    opacity: 1;
+}
+
+.search-icon {
+    height: 26px;
+}
+
+.audio-button {
+    margin-left: 15px;
+    height: 40px;
+    width: 45px;
+    border-radius: 20px;
+    border: none;
+    color: rgb(243,243,243);
+    cursor: pointer;
+    position: relative;
+}
+
+.audio-icon {
+    height: 27px;
+}
+
+.right-tools {
+    margin-right: 30px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.create-icon {
+    height: 29px;
+}
+
+.notification-icon-container {
+    position: relative;
+}
+
+.notifications-count {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    background-color: rgb(204,0,0);
+    color: white;
+    font-family: Roboto;
+    font-size: 12px;
+    padding: 1px 5px;
+    border-radius: 20px;
+}
+
+.notification-icon {
+    height: 29px;
+}
+
+.my-profile {
+    height: 32px;
+    border-radius: 16px;
+}
+
